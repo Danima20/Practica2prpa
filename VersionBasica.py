@@ -65,13 +65,9 @@ class Monitor():
             self.cochesS.value -=1
             self.pasar_peatUP.notify_all()
             self.pasar_nortUP.notify_all()
-            self.pasar_surUP.notify_all()
         if direction==0:
             self.cochesN.value -=1
-            if self.cochesN.value == 0:
-                pass
             self.pasar_peatUP.notify_all()
-            self.pasar_nortUP.notify_all()
             self.pasar_surUP.notify_all()
         self.mutex.release()
 
@@ -89,7 +85,6 @@ class Monitor():
         if self.peat.value == 0:
             self.pasar_surUP.notify_all()    
             self.pasar_nortUP.notify_all()
-        self.pasar_peatUP.notify_all()
         self.mutex.release()
 
     def __repr__(self) -> str:
