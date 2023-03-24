@@ -2,6 +2,7 @@
 ACTIVIDAD MONITORES 
 
 Se suben tres archivos, dos códigos de Python, y un pdf.
+
 Uno de los códigos de Python 'VersionBasica.py' contiene el código de la versión inicial, es decir, solo garantiza la seguridad del puente. Para ello utiliza una condición con la cual los peatones no pueden entrar si hay coches en el puente; y los coches yendo en una dirección no pueden entrar si hay peatones o coches de la otra dirección en el puente.
 En esta versión pueden ocurrir problemas de inanición que se solucionaran en el siguiente código.
 
